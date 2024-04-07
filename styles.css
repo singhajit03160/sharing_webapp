@@ -1,0 +1,337 @@
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #bfbfbf #f0f0f0;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 20px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #bfbfbf;
+    border-radius: 10px;
+    border: 3px solid #f0f0f0;
+  }
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 55px 0 0 0;
+}
+
+.title-main{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'lora',system-ui;
+    color: #00487c;
+    letter-spacing: 4px;
+    font-weight: 800;
+}
+.tagline{
+    font-size: .9rem;
+    text-align: center;
+    font-family: 'poppins',system-ui;
+    color: #00487c;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 10%;
+}
+
+.send-section,
+.receive-section {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    cursor: pointer;
+    border-radius: 200px;
+    transition: .5s all linear;
+}
+
+.send-section h3,
+.receive-section h3 {
+    display: none;
+    font-family: "poppins", system-ui;
+    font-size: 3rem;
+    color: #00487c;
+}
+
+.send-section:hover h3 {
+    display: block;
+    transition: .5s linear;
+}
+
+.send-section:hover img {
+    display: none;
+    transition: .5s linear;
+}
+
+.receive-section:hover h3 {
+    display: block;
+    transition: .5s linear;
+}
+
+.receive-section:hover img {
+    display: none;
+    transition: .5s linear;
+}
+
+.footer{
+    background: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.ftr-above-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    color: #00487c;
+    font-family: 'lora';
+    font-size: 1rem;
+}
+
+.ftr-above-inner p{
+    margin: 0;
+}
+
+.ftr-above-inner a{
+    display: flex;
+}
+
+.ftr-below{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.tnc-cont a, .policy-cont a{
+    text-align: center;
+    color: #00487c;
+    font-family: 'poppins';
+    font-size: .8rem;
+}
+
+@media only screen and (min-width: 1800px) {
+    .footer{
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .footer{
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .main{
+        height: 90vh;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .main{
+        height: 75vh;
+    }
+    
+    .footer{
+        padding: 30px 0;
+        gap: 20px;
+    }
+
+    .ftr-below{
+        gap: 5%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .main{
+            height: 95vh;
+        }
+}
+
+@media only screen and (max-width: 900px) {
+    .main{
+            height: 80vh;
+        }
+}
+
+@media only screen and (max-width: 800px) {
+    .main{
+        gap: 40px;
+    }
+
+    .send-section,
+    .receive-section {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .send-section,
+    .receive-section {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .send-section,
+    .receive-section {
+        width: 200px;
+        height: 200px;
+    }
+
+    .send-section h3,
+    .receive-section h3 {
+        display: none;
+        font-family: "poppins", system-ui;
+        font-size: 2rem;
+        color: #00487c;
+    }
+
+    .send-section img,
+    .receive-section img {
+        width: 67px;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+
+    .main{
+        height: 120vh;
+        flex-direction: column;
+        gap: 6%;
+    }
+
+    .send-section,
+    .receive-section {
+        width: 200px;
+        height: 200px;
+    }
+
+    .send-section img,
+    .receive-section img {
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .main {
+        flex-direction: column;
+        gap: 50px;
+        height: 75vh;
+    }
+
+    .send-section,
+    .receive-section {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .main{
+        height: 100vh;
+        
+    }
+
+    .footer{
+        gap: 10px;
+    }
+
+    .ftr-above-inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-align: center;
+        color: #00487c;
+        font-family: 'lora';
+        font-size: .8rem;
+    }
+
+    .tnc-cont a, .policy-cont a{
+        text-align: center;
+        color: #00487c;
+        font-family: 'poppins';
+        font-size: .7rem;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .main{
+        height: 110vh;
+        gap: 30px;
+    }
+
+
+    .title-main{
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: 'lora',system-ui;
+        color: #00487c;
+        letter-spacing: 4px;
+        font-weight: 800;
+    }
+    .tagline{
+        font-size: .8rem;
+        text-align: center;
+        font-family: 'poppins',system-ui;
+        color: #00487c;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+
+    .send-section,
+    .receive-section {
+        width: 150px;
+        height: 150px;
+    }
+
+    .send-section img,
+    .receive-section img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .main {
+        gap: 30px;
+    }
+}

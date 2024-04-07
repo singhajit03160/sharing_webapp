@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home | 5D Share</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="title-main">5D Share</div>
+        <div class="tagline">Sharing Made Easier</div>
+    </div>
+
+    <div class="main">
+        <div onclick="visitSend()" class="send-section"><img src="send.png" />
+            <h3>Send</h3>
+        </div>
+        <div onclick="visitReceive()" class="receive-section"><img src="receive.png" />
+            <h3>Receive</h3>
+        </div>
+    </div>
+
+
+    <script>
+        function visitSend() {
+            window.location = "Send/";
+        }
+        function visitReceive() {
+            window.location = "Receive/";
+        }
+
+    </script>
+
+</body>
+
+</html>
